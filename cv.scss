@@ -1,0 +1,188 @@
+$background-color: #121212;
+$text-color: #e0e0e0;
+$accent-color: #8f3ff1;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+
+  header {
+    background-color: $accent-color;
+    color: $text-color;
+    text-align: center;
+    padding: 20px 0;
+
+    h1 {
+      margin: 0;
+      font-size: 5.5em;
+    }
+  }
+
+  section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1500px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    h2 {
+      color: $accent-color;
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+
+        // Style pour l'en-tête de l'expérience
+        .experience-header {
+          display: flex;
+          justify-content: space-between;
+
+          // Style pour le titre
+          strong {
+            font-size: 1.5em;
+          }
+
+          // Style pour la date
+          .date {
+            font-weight: bold;
+            margin-left: 20px;
+          }
+        }
+
+        // Styles pour la sous-liste
+        ul {
+          margin-top: 10px;
+          padding-left: 20px;
+
+          li {
+            margin-bottom: 10px;
+          }
+        }
+
+        .diploma-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          strong {
+            font-size: 1.5em;
+          }
+
+          .date {
+            font-weight: bold;
+            margin-left: 20px;
+          }
+        }
+
+        .italic {
+          font-style: italic;
+        }
+
+        p {
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
+
+  #informations-personnelles {
+    .informations {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+
+      .info-card {
+        flex: 1;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 0 10px;
+        text-align: center;
+      }
+    }
+
+    .liens {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      a {
+        margin: 0 15px;
+        text-decoration: none;
+
+        img {
+          width: 45px;
+          height: 45px;
+          filter: brightness(0) invert(1);
+          transition: transform 0.2s ease, filter 0.2s ease;
+
+          &:hover {
+            transform: scale(1.5);
+            filter: brightness(0.8) invert(1);
+          }
+        }
+      }
+    }
+  }
+
+  #projets {
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+
+        .project-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          strong {
+            font-size: 1.5em;
+          }
+
+          .date {
+            font-weight: bold;
+          }
+        }
+
+        .italic {
+          font-style: italic;
+        }
+
+        p {
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: $accent-color;
+    color: $text-color;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
