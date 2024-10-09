@@ -135,6 +135,26 @@ body #projets ul li .italic {
 body #projets ul li p {
   margin: 10px 0 0;
 }
+body #telechargement {
+  margin-top: 20px;
+}
+body #telechargement button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #8f3ff1;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+body #telechargement button:hover {
+  background-color: rgb(170.7281553398, 110.5339805825, 244.4660194175);
+  transform: scale(1.05);
+}
+body #telechargement button:active {
+  transform: scale(0.98);
+}
 body footer {
   text-align: center;
   padding: 10px 0;
@@ -143,6 +163,27 @@ body footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+body #back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 7px 20px;
+  background-color: #8f3ff1;
+  color: #e0e0e0;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  display: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 2px solid #121212;
+}
+body #back-to-top:hover {
+  background-color: rgb(170.7281553398, 110.5339805825, 244.4660194175);
+  transform: scale(1.05);
+}
+body #back-to-top:active {
+  transform: scale(0.98);
 }
 
 /*# sourceMappingURL=cv.css.map */

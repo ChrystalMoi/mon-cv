@@ -267,10 +267,48 @@
       </ul>
     </section>
 
+    <section id="telechargement">
+      <h2>Téléchargement du CV en pdf</h2>
+      <div style="text-align: center; margin-top: 20px">
+        <a href="Cv_ChrystalBastid.pdf" download="Cv_ChrystalBastid.pdf">
+          <button style="padding: 10px 20px; font-size: 16px; cursor: pointer">
+            Télécharger le CV en PDF
+          </button>
+        </a>
+      </div>
+    </section>
+
     <footer>
       <p>&copy; 2024 Chrystal. Tous droits réservés.</p>
     </footer>
 
+    <a href="#" id="back-to-top" title="Revenir en haut">↑</a>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.10.1/sass.sync.js"></script>
+    <script>
+      // Lorsque l'utilisateur défile de 100px -> afficher le bouton
+      window.onscroll = function () {
+        let button = document.getElementById("back-to-top");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      };
+
+      // Fonction pour un défilement fluide vers le haut
+      document
+        .getElementById("back-to-top")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+    </script>
   </body>
 </html>
